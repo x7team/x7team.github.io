@@ -180,12 +180,13 @@ a {
     font-weight: bold
 }
 
-.btn:hover {
+
+/*.btn:hover {
     -webkit-animation: stripes-move 0.5s infinite linear;
     animation: stripes-move 0.5s infinite linear;
     background: -webkit-repeating-linear-gradient(45deg, #b6944c 0, #b6944c 0.25em, transparent 0.25em, transparent 0.5em);
     background: repeating-linear-gradient(45deg, #b6944c 0, #b6944c 0.25em, transparent 0.25em, transparent 0.5em);
-}
+}*/
 
 @keyframes stripes-move {
     100% {
