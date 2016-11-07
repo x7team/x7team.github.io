@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.12/slideout.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
     <title>Hristiqn Kolev Portfolio</title>
@@ -48,7 +47,7 @@
             <div class="header_slogan">
                 <h1 class="section_heading">Hristiqn Kolev</h1>
                 <p>Front-end developer</p>
-                <a href="#" id="banner_scroll" class="btn">Learn more</a>
+                <a href="#" id="banner_scroll" class="btn btn_banner">Learn more</a>
             </div>
         </div>
     </section>
@@ -113,18 +112,17 @@
         <div class="wrapper">
             <div class="contact_inner_wrapper">
                 <h1 class="section_heading">Contact me</h1>
-                <form id="contact_form" name="sendMessage">
+                <form id="contact_form" name="sendMessage" action="https://formspree.io/hristiqnk@gmail.com" method="POST">
                     <div class="top_form">
-                        <input type="text" class="input_style" placeholder="Name" id="name" required>
-                        <input type="email" class="input_style" placeholder="Email" id="email" required>
-                        <input type="email" class="input_style" placeholder="Subject" id="subject">
+                        <input type="text" name="name" class="input_style" placeholder="Name" id="name" required>
+                        <input type="email" name="_replyto" class="input_style" placeholder="Email" id="email" required>
+                        <input type="text" name="email" class="input_style" placeholder="Subject" id="subject">
                     </div>
                     <div class="bottom_form">
                         <textarea id="message" class="input_style" name="message" placeholder="Message" required></textarea>
 
                     </div>
-                    <a href="#" class="btn btn_send">Send</a>
-
+                    <input name="submit" type="submit" value="Send" class="btn btn_send">
                 </form>
             </div>
         </div>
@@ -133,7 +131,7 @@
         <div class="wrapper">
             <div class="footer_inner_wrapper">
                 <div class="footer_left_side">
-                    <p>&copy; Hristiqn Kolev 2016<br> All rights reserved</p>
+                    <p>&copy; Hristiqn Kolev 2016 v 0.1<br> All rights reserved</p>
                 </div>
                 <div class="footer_right_side">
                     <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
