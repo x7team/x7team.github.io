@@ -23,6 +23,11 @@
                }, 1000);
            });
 
+           $("#banner_scroll").click(function() {
+               $('html, body').animate({
+                   scrollTop: $(".main").offset().top
+               }, 1000);
+           });
 
            $(window).scroll(function() {
                var scroll = $(window).scrollTop();

@@ -19,34 +19,44 @@
 
 <body>
     <header>
-        <div class="wrapper">
-            <div class="header_inner_wrapper">
+        <nav class="navBar">
+            <nav class="wrapper">
                 <p class="logo">H.Kolev</p>
-                <div class="nav_wrap">
-                    <a class="toggleNav">☰ Menu</a>
-
-                    <nav>
-                        <a href="#" id="about">About</a>
-                        <a href="#" id="services">Services</a>
-                        <a href="#" id="works">Work</a>
-                        <a href="#" id="contact">Contact</a>
-                    </nav>
-                </div>
+                <!-- Logo -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="label-toggle"></label>
+                </input>
+                <ul>
+                    <a href="#" id="about">
+                        <li>About</li>
+                    </a>
+                    <a href="#" id="services">
+                        <li>Services</li>
+                    </a>
+                    <a href="#" id="works">
+                        <li>Work</li>
+                    </a>
+                    <a href="#" id="contact">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <section class="banner cf">
+        <div class="wrapper">
+            <div class="header_slogan">
+                <h1 class="section_heading">Hristiqn Kolev</h1>
+                <p>Front-end developer</p>
+                <a href="#" id="banner_scroll" class="btn">Learn more</a>
             </div>
         </div>
-    </header>
-    <section class="banner">
-        <div class="header_slogan">
-            <h1>Hristiqn Kolev</h1>
-            <p>Front-end developer</p>
-            <a href="#" class="btn">Learn more</a>
-        </div>
     </section>
-    <section class="main">
+    <section class="main section_spacer">
         <div class="wrapper">
             <div class="main_inner_wrapper">
                 <div class="main_left">
-                    <h1>About me</h1>
+                    <h1 class="section_heading">About me</h1>
                     <p class="main_info">Hi my name is Hristiqn and im a passionate web developer & wanna be designer with just under a year of professional experience
                         <br>
                         <br> I gratuated with a bachelor's degree in computer science this year and now im trying to learn as much as possible about the latest technologies in the web world
@@ -57,8 +67,8 @@
             </div>
         </div>
     </section>
-    <section class="works">
-        <h1>My works</h1>
+    <section class="works section_spacer">
+        <h1 class="section_heading">My works</h1>
         <div class="works_wrapper">
 
             <div class="img_wrapper">
@@ -73,13 +83,12 @@
             <div class="img_wrapper">
                 <img src="https://d13yacurqjgara.cloudfront.net/users/1047810/screenshots/3061557/404.png" alt="">
             </div>
-
         </div>
     </section>
-    <section class="services">
+    <section class="services section_spacer">
         <div class="wrapper">
             <div class="top_wrapper">
-                <h1>Services</h1>
+                <h1 class="section_heading">Services</h1>
             </div>
             <div class="services_inner_wrapper">
 
@@ -100,10 +109,10 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact section_spacer">
         <div class="wrapper">
             <div class="contact_inner_wrapper">
-                <h1>Contact me</h1>
+                <h1 class="section_heading">Contact me</h1>
                 <form id="contact_form" name="sendMessage">
                     <div class="top_form">
                         <input type="text" class="input_style" placeholder="Name" id="name" required>
@@ -112,9 +121,10 @@
                     </div>
                     <div class="bottom_form">
                         <textarea id="message" class="input_style" name="message" placeholder="Message" required></textarea>
-                        <a href="#" class="btn btn_send">Send</a>
 
                     </div>
+                    <a href="#" class="btn btn_send">Send</a>
+
                 </form>
             </div>
         </div>
@@ -122,8 +132,8 @@
     <footer>
         <div class="wrapper">
             <div class="footer_inner_wrapper">
-                <div class="footer_left_size">
-                    <p>&copy; Hristiqn Kolev 2016 All rights reserved</p>
+                <div class="footer_left_side">
+                    <p>&copy; Hristiqn Kolev 2016<br> All rights reserved</p>
                 </div>
                 <div class="footer_right_side">
                     <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
