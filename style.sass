@@ -1,9 +1,7 @@
 
-$white: #ffffff
-
-$black: #101010
-
-$gold: #b6944c
+$white: #ffffff;
+$black: #101010;
+$gold: #b6944c;
 
 
 html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
@@ -61,7 +59,7 @@ a
   font-family: 'Quattrocento', serif
   text-decoration: none
 
-::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder
+\::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder
   color: $white
 
 /*End main styles
@@ -107,6 +105,7 @@ nav
     display: flex
     justify-content: space-between
     list-style-type: none
+    width: 30%
     a
       font-family: Baron Neue Bold
       color: $white
@@ -140,9 +139,6 @@ header
     justify-content: space-between
   .logo
     visibility: hidden
-    // color: $white
-    // font-size: 38px
-    // font-weight: bold
 
 nav
   display: -webkit-flex
@@ -185,10 +181,10 @@ nav
       margin: 0
 
 .banner
-  background-image: url("../images/banner.jpg")
+  background-image: url("../images/banner_test.jpg")
   background-size: cover
   width: 100%
-  padding: 20px 0 260px
+  padding: 20px 0 280px
 
 .header_slogan
   display: -webkit-flex
@@ -211,38 +207,42 @@ nav
     padding-top: 25%
     font-size: 90px
     margin-bottom: 40px
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(left, #ffffff 50%,  #000000 50%) 
+    background: -webkit-linear-gradient(left, #ffffff 50%,#000000 50%)
+    linear-gradient(to right, #ffffff 50%,  #000000 50%)   
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 )  
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    display: table
+
   p
-    font-size: 26px
-    font-family: Baron Neue bold 
+    font-size: 24px
     font-weight: 500
     color: $white
-
+    font-family: Baron Neue Bold
+    text-shadow: -1px 2px 3px rgba(0, 0, 0, 0.62)
 .btn_banner
   margin-top: 30px
-  border-bottom: 6px solid $white
-  font-weight: bold
   font-size: 20px
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.62)
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.42)
+  font-family: Baron Neue Bold
 
-.main
-  padding: 90px 0
-  .main_inner_wrapper
-    display: -webkit-flex
-    display: -ms-flexbox
-    display: flex
+
+.main_inner_wrapper
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
 
 .main_inner_wrapper
   h1
     text-align: left
+    color: $black;
+    padding: 4px 18px;
+    display: inline-block;
+    letter-spacing: 3px;
   .main_left
-    h1:after
-      content: ''
-      background: $gold
-      height: 16px
-      width: 39%
-      position: relative
-      z-index: -10
-      display: block
-      top: -19px
     p
       line-height: 2
   .main_right
@@ -270,16 +270,6 @@ nav
 
 .services
   padding: 90px 0
-  .top_wrapper h1:after
-    content: ''
-    background: $gold
-    height: 18px
-    width: 15%
-    position: relative
-    z-index: -10
-    display: block
-    top: -19px
-    left: 43%
   .services_inner_wrapper
     display: -webkit-flex
     display: -ms-flexbox
@@ -411,7 +401,7 @@ footer
 
 /*Mobile styles
 
-@media (max-width: 768px)
+@media (max-width: 1024px)
   .main .wrapper .main_inner_wrapper
     .main_right
       img
