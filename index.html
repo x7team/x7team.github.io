@@ -4,148 +4,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
+
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
 
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Hristiqn Kolev Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
     <script type="text/javascript" src="js/scripts.js"></script>
+
 </head>
 
 <body>
+    <!--Heading section-->
     <header>
         <nav class="navBar">
             <nav class="wrapper">
-                <p class="logo">H.Kolev</p>
                 <!-- Logo -->
                 <input type="checkbox" id="menu-toggle">
                 <label for="menu-toggle" class="label-toggle"></label>
                 </input>
                 <ul>
-                    <a href="#" id="about">
+                    <a href="#" id="nav_about">
                         <li>About</li>
                     </a>
-                    <a href="#" id="works">
+                    <a href="#" id="do_skills">
+                        <li>What i do</li>
+                    </a>
+                    <a href="#" id="nav_skills">
+                        <li>Skills</li>
+                    </a>
+                    <a href="#" id="nav_works">
                         <li>Work</li>
                     </a>
-                    <a href="#" id="services">
-                        <li>Services</li>
-                    </a>
-                    <a href="#" id="contact">
+                    <a href="#" id="nav_contact">
                         <li>Contact</li>
                     </a>
                 </ul>
             </nav>
         </nav>
     </header>
-    <section class="banner cf">
-        <div class="wrapper">
-            <div class="header_slogan">
-                <h1 class="section_heading">Hristiqn Kolev</h1>
-                <p>Front-end developer</p>
-                <a href="#" id="banner_scroll" class="btn btn_banner">Learn more</a>
+    <!--Header section end-->
+    <!-- -->
+    <!--Banner section start-->
+    <section id="banner">
+        <div class="banner_inner">
+            <div class="text_wrapper">
+                <h1>Hristiqn Kolev</h1>
+                <p>Web Developer</p>
+                <button class="btn btn_scroll" id="scroll_about">Learn more
+                </button>
             </div>
         </div>
     </section>
-    <section class="main section_spacer">
+    <!--Banner section end-->
+    <!--About section start-->
+    <section id="about">
         <div class="wrapper">
-            <div class="main_inner_wrapper">
-                <div class="main_left">
-                    <h1 class="section_heading">About me</h1>
-                    <p class="main_info">Hi my name is Hristiqn and im a passionate web developer & wanna be designer with just under a year of professional experience
+            <div class="inner_wrapper">
+                <div class="text_wrapper">
+                    <h1 class="section_style">About me</h1>
+                    <p>Hi my name is Hristiqn and im a passionate web developer & wanna be designer with just under a year of professional experience I gratuated with a bachelor's degree in computer science this year and now im trying to learn as much as
+                        possible about the latest technologies in the web world.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Aboust section end-->
+    <section id="service">
+        <div class="wrapper">
+            <h1 class="section_style">What i do</h1>
+            <!-- heading-->
+            <div class="grid_wrapper">
+                <div class="row_top">
+                    <div class="cell">
+                        <h1>WEB DEVELOPMENT</h1>
+                        <p>I love using HTML,CSS and JavaScript with build tools to build a high quality pixel perfect websites and apps with modular front-end and efficient back end code.</p>
+                    </div>
+                    <div class="cell">
+                        <h1>Responsive Design</h1>
+                        <p>I aim design and implement beautiful and responsive interface for websites and apps that adapt to every screen size and device.</p>
+                    </div>
+                </div>
+                <div class="row_bottom">
+                    <div class="cell">
+                        <h1>UI &amp; UX design</h1>
+                        <p>There have been so many times that i have pulled my hair out cause i try to use a website. Thats why i always try to keep the user experience first when i'm creating a new web concept. </p>
+                    </div>
+                    <div class="cell">
+                        <h1>What's next</h1>
+                        <p>What's next in the web community is always the question. That's why i always try to keep up with the current web technologies and strive for better code.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <!-- Skills section -->
+        <div class="wrapper">
+            <h1 class="section_style">Skills</h1>
+            <div class="skills_inner_wrapper">
+                <div class="development">
+                    <p class="kn_heading">Development</p>
+                    <div class="dev_skills">
+                        <span class="skill_box">HTML5</span>
+                        <span class="skill_box">CSS3</span>
+                        <span class="skill_box">JavaScript</span>
+                        <span class="skill_box">Jquery</span>
+                        <span class="skill_box">Sass</span>
+                        <span class="skill_box">PHP</span>
+                        <span class="skill_box">WordPress</span>
+                    </div>
+                </div>
+                <div class="tools">
+                    <p class="kn_heading">Tools</p>
+                    <div class="tools_skills">
+                        <span>Adobe Creative Suite</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Gulp</span>
+                        <span>RESTful APIs</span>
+                    </div>
+                </div>
+                <div class="knowledge">
+                    <p class="kn_heading">Knowledge</p>
+                    <div class="know_skills">
+                        <span>Usability</span>
+                        <span>Wireframing</span>
+                        <span>SEO</span>
+                        <span>User experience</span>
+                        <span>User interface</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Skills section -->
+
+    <section id="projects">
+        <!-- Projects section -->
+        <div class="wrapper">
+            <h1 class="title_whitebg">Work</h1>
+
+            <div class="projects_inner">
+                <div class="card_wrapper">
+                    <div class="card">
+                        <div class="card-img">
+                            <a href="http://codepen.io/x7team/pen/NbPgoa" target="_blank"> <img src="../images/codepen_1.png" alt="Portfolio item card"></a>
+                        </div>
+                        <div class="card-desc">
+                            <h1 class="title">Mock layout of a card</h1>
+                            <p class="desc">Very simple card based design.</p>
+                            <div class="tech_wrap">
+                                <span class="tech">HTML5</span>
+                                <span class="tech">CSS3</span>
+                            </div>
+                            <a href="http://codepen.io/x7team/pen/NbPgoa" target="_blank"> <button class="btn btn_demo">Demo</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <a href="http://codepen.io/x7team/pen/GNqwBd" target="_blank"> <img src="../images/codepen_2.png" alt="A reservation form"></a>
+                        </div>
+                        <div class="card-desc">
+                            <h1 class="title">Mock layout of a card</h1>
+                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
+                            <div class="tech_wrap">
+                                <span class="tech">HTML5</span>
+                                <span class="tech">CSS3</span>
+                                <span class="tech">JS</span>
+                            </div>
+                            <a href="http://codepen.io/x7team/pen/GNqwBd" target="_blank"> <button class="btn btn_demo">Demo</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <a href="http://codepen.io/x7team/pen/bBeyKr" target="_blank"> <img src="../images/codepen_3.png" alt="Mock layout"></a>
+                        </div>
+                        <div class="card-desc">
+                            <h1 class="title">Mock layout of a card</h1>
+                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
+                            <div class="tech_wrap">
+                                <span class="tech">HTML5</span>
+                                <span class="tech">CSS3</span>
+                            </div>
+                            <a href="http://codepen.io/x7team/pen/bBeyKr" target="_blank"><button class="btn btn_demo">Demo</button></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- End Projects section -->
+
+    <section id="contact">
+        <!-- Contact section -->
+        <div class="wrapper">
+            <h1 class="section_style">Contact me</h1>
+            <div class="content_wrapper">
+                <div class="inner_content_left">
+                    <p> <span>@</span><a href="mailto:hristiqnk@gmail.com?Subject=Hi%20there" target="_top">hristiqnk@gmail.com</a>
+                    </p>
+
+                    <p>
+                        <a href="https://github.com/x7team" target="_blank"> <i class="fa fa-github-square" aria-hidden="true"></i>github.com/x7team</a>
+                    </p>
+
+                </div>
+                <div class="inner_content_right">
+
+                    <p>
+                        <a href="http://codepen.io/x7team/" target="_blank">
+                            <i class="fa fa-codepen" aria-hidden="true"></i> Codepen
+                        </a>
                         <br>
-                        <br> I gratuated with a bachelor's degree in computer science this year and now im trying to learn as much as possible about the latest technologies in the web world
-                </div>
-                <div class="main_right">
-                    <img src="images/about.jpg" alt="Developement setup">
+                    </p>
+                    <p>
+                        <a href="www.linkedin.com/in/hristiyan-kolev-83402a123" target="_blank">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>Linkedin
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="works section_spacer">
-        <h1 class="section_heading">My works</h1>
-        <div class="works_wrapper">
+    <!-- End Contact section -->
 
-            <div class="img_wrapper">
-                <a href="http://codepen.io/x7team/pen/NbPgoa" target="_blank"><img src="../images/codepen_1.png" alt=""></a>
-            </div>
-            <div class="img_wrapper">
-                <a href="http://codepen.io/x7team/pen/GNqwBd" target="_blank"><img src="../images/codepen_2.png" alt=""></a>
-            </div>
-            <div class="img_wrapper">
-                <a href="http://codepen.io/x7team/pen/bBeyKr" target="_blank"><img src="../images/codepen_3.png" alt=""></a>
-            </div>
 
-        </div>
-    </section>
-    <section class="services section_spacer">
-        <div class="wrapper">
-            <div class="top_wrapper">
-                <h1 class="section_heading">Services</h1>
-            </div>
-            <div class="services_inner_wrapper">
-
-                <div class="services_main_content">
-                    <h1>Web development</h1>
-                    <i class="fa fa-code" aria-hidden="true"></i>
-                    <br>
-                    <p>Developing web sites following the latest trends in the industry. My expertise is in HTML/CSS and a little bit of JS &Wordpress</p>
-                </div>
-                <div class="services_main_content">
-                    <h1>Web design</h1>
-                    <i class="fa fa-desktop" aria-hidden="true"></i>
-                    <br>
-                    <p>Designing nice responsive websites.I'm a fan of well structured and simple websites in both design and code.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="contact section_spacer">
-        <div class="wrapper">
-            <div class="contact_inner_wrapper">
-                <h1 class="section_heading">Contact me</h1>
-                <form id="contact_form" name="sendMessage" action="https://formspree.io/hristiqnk@gmail.com" method="POST">
-                    <div class="top_form">
-                        <input type="text" name="name" class="input_style" placeholder="Name" id="name" required>
-                        <input type="email" name="_replyto" class="input_style" placeholder="Email" id="email" required>
-                        <input type="text" name="email" class="input_style" placeholder="Subject" id="subject">
-                    </div>
-                    <div class="bottom_form">
-                        <textarea id="message" class="input_style" name="message" placeholder="Message" required></textarea>
-
-                    </div>
-                    <input name="submit" type="submit" value="Send" class="btn btn_send">
-                </form>
-            </div>
-        </div>
-    </section>
     <footer>
+        <!-- Footer -->
         <div class="wrapper">
-            <div class="footer_inner_wrapper">
-                <div class="footer_left_side">
-                    <p>&copy; Hristiqn Kolev 2016 v 0.1<br> All rights reserved</p>
-                </div>
-                <div class="footer_right_side">
-                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
-</a>
-                    <a href="https://github.com/x7team" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
-</a>
-                    <a href="http://codepen.io/x7team" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i>
-</a>
-
-
-                </div>
-            </div>
+            <p> <i class="fa fa-copyright" aria-hidden="true"></i> Hristiqn Kolev 2016</p>
         </div>
     </footer>
-
-
+    <!--End Footer -->
 
 </body>
 
